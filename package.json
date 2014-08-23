@@ -1,0 +1,25 @@
+{
+  "name": "random-date",
+  "version": "0.0.1",
+  "description": "pick up a random date",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lisposter/random-date.git"
+  },
+  "keywords": [
+    "random",
+    "date",
+    "test",
+    "utils"
+  ],
+  "author": "Leigh Zhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lisposter/random-date/issues"
+  },
+  "homepage": "https://github.com/lisposter/random-date"
+}
