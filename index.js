@@ -12,11 +12,21 @@ function parseRegion(val) {
     return ms(val);
 }
 
-module.exports = exports.getRandomDate = function (val) {
+module.exports = exports.getRandomDate = function (val, ref) {
     var direction;
     var region;
+    var refMs;
     var range = [];
-    var curr = new Date().getTime();
+    
+    if(ref) {
+        try {
+            refMs = new Date(ref).getTime();
+        } catch(e) {
+            throw new Error(e);
+        }
+    }
+
+    var curr = refMs || new Date().getTime();
 
     if(/\+|\-/.test(val[0])) {
         direction = val[0];
