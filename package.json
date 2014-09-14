@@ -1,6 +1,6 @@
 {
   "name": "random-date",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "pick up a random date",
   "main": "index.js",
   "scripts": {
