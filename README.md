@@ -18,7 +18,7 @@ var date = randomDate('1d');
 
 # api
 
-`randomDate(str)`
+`randomDate(str, [ref])`
 
 the `str` can be like these:
 
@@ -39,3 +39,17 @@ if it is `-`, on the contrary, the random range is ended at now.
 At last, when it is omited, the random range is started from `region` before now, and end at `region` after now.
 
 the `region` is a string specify a time range, it can be just a number, means how many ms, and it also support every unit that [ms](https://www.npmjs.org/package/ms) supported.
+
+`ref`, the reference time for the range, if no `ref` arg, the range is calculate with current time, if it has `ref` arg, 
+the range is calculate with the `ref`.
+
+eg:
+
+```js
+var randomDate = require('random-date');
+
+var date = randomDate('1d', '2014-01-01');
+// 1388571166958
+// equals to Wed Jan 01 2014 18:12:46 GMT+0800 (CST)
+
+```
